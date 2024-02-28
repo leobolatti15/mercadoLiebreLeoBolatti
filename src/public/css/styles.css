@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+nav {
+  display: none;
+}
+
+main section h3 {
+  font-size: 24px;
+}
+
+main section.last-visit {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 12px;
+}
+
+div.top-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+form.form {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo {
+  width: 30%;
+  padding: 10px;
+}
+
+header nav {
+  font-size: 12px;
+  display: flex;
+}
+
+header ul {
+  list-style-type: none;
+  display: none;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header input#input {
+  background-color: #fff;
+  outline: none;
+  color: #666;
+  font-size: 12px;
+  padding-top: 1px;
+  padding-left: 2px;
+  border-radius: 3px;
+  border: #666 1px solid;
+  width: 90%;
+  max-height: 32px;
+}
+
+header .input {
+  width: 10%;
+}
+
+header .submit {
+  background-color: #fff;
+  color: #666;
+  max-height: 24px;
+  border-radius: 3px;
+  border: #666 1px solid;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+header div.top-header p {
+  width: 50%;
+  text-align: center;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+article div.main-article {
+  width: 100%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+}
+
+h3,
+.description {
+  color: black;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section div.products article {
+  background-color: #fff;
+  width: 100%;
+  margin: 20px;
+}
+
+main section article img {
+  width: 100%;
+  padding: 0;
+}
+
+div.products {
+  display: flex;
+}
+
+section article i {
+  color: #39b54a;
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+article div.main-article {
+  position: relative;
+}
+
+.price-discount {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+p.discount {
+  color: #39b54a;
+  width: 70%;
+  padding-top: 1px;
+  text-align: center;
+}
+
+p.price {
+  font-size: 18px;
+  width: 30%;
+}
+
+.main-footer {
+  background-color: #fff;
+  text-align: center;
+}
+
+footer section i {
+  size: 2em;
+  margin-top: 30px;
+  color: #1259c3;
+}
+
+footer section i:hover {
+  size: 2em;
+  margin-top: 30px;
+  color: #eac926;
+}
+
+footer section p {
+  font-size: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.main-section {
+  background-color: #fff;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+header nav ul li#list1 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+h4.description {
+  display: none;
+}
+
+article#macbook,
+article#samsung,
+article#tv {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  article div.main-article h4.description {
+    display: block;
+  }
+
+  nav {
+    display: block;
+  }
+
+  header div.burger-menu {
+    display: none;
+  }
+
+  header ul.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    gap: 50px;
+  }
+
+  header ul.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    gap: 50px;
+  }
+
+  article#macbook {
+    display: block;
+  }
+
+  div.top-header {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 769px) {
+  article div.main-article h4.description {
+    position: relative;
+    opacity: 0;
+  }
+
+  main section div.products article {
+    width: 22%;
+    box-shadow: none;
+    transition: box-shadow 300ms;
+    cursor: pointer;
+  }
+
+  main section div.products article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  main section article:hover h4.description {
+    opacity: 1;
+  }
+
+  main section div.products article .fa-truck {
+    transition: transform 300ms;
+  }
+
+  main section div.products article:hover .fa-truck {
+    transform: rotate(-90deg);
+  }
+
+  form.formlogin button {
+    transition: color, background-color 300ms;
+    cursor: pointer;
+  }
+
+  form.formlogin button:hover {
+    background-color: #0022AA;
+    color: #ffffff;
+  }
+
+  article#samsung,
+  article#tv {
+    display: block;
+  }
+
+  footer {
+    display: flex;
+    padding-bottom: 30px;
+  }
+}
